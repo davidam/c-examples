@@ -11,8 +11,11 @@ queue-with-stacks:
 stack:
 	g++ stack.cc -o stack
 
-clean: 
-	rm -f circular-queue queue queue-with-stacks stack
+struct:
+	gcc struct.c -o struct
 
-all: circular-queue queue queue-with-stacks stack
+clean: 
+	rm -f circular-queue queue queue-with-stacks stack struct
+
+all: circular-queue queue queue-with-stacks stack struct
 
