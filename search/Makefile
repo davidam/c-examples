@@ -1,19 +1,3 @@
-srcdir = .
-
-GUIX = ${srcdir}/guix.texi
-GUIX_ES = ${srcdir}/guix.es.texi
-GUIX_PO = ${srcdir}/guix.es.po
-GUIX_POT = ${srcdir}/guix.pot
-# HSUSER = ${srcdir}/hsuser.texi
-# HSUSER_ES = ${srcdir}/hsuser.es.texi
-# HSUSER_PO = ${srcdir}/hsuser.es.po
-# HSUSER_POT = ${srcdir}/hsuser.pot
-# RLUSER = ${srcdir}/rluser.texi
-# RLUSER_ES = ${srcdir}/rluser.es.texi
-# RLUSER_PO = ${srcdir}/rluser.es.po
-# RLUSER_POT = ${srcdir}/rluser.pot
-
-# .PHONY: actualiza_pot html info libro pdf texi
 
 bubble-sort: 
 	gcc bubble-sort.c -o bubble-sort
@@ -29,9 +13,6 @@ heap:
 
 quicksort:
 	gcc quicksort.c -o quicksort
-
-# jump:
-# 	gcc jump.c -o jump
 
 mergesort:
 	g++ mergesort.cc -o mergesort
