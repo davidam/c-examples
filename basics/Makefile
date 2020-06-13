@@ -17,8 +17,13 @@ parentchild:
 parentchild2:
 	gcc parentchild2.c -o parentchild2
 
+chain-of-pointers:
+	gcc chain-of-pointers.c -o chain-of-pointers
 
-all: punteros puntero celsius printid parentchild parentchild2
+waitpid:
+	gcc waitpid.c -o waitpid
+
+all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid
 
 clean:
-	rm -f punteros puntero celsius printid parentchild parentchild2	
+	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid
