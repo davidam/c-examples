@@ -20,10 +20,13 @@ parentchild2:
 chain-of-pointers:
 	gcc chain-of-pointers.c -o chain-of-pointers
 
-waitpid:
-	gcc waitpid.c -o waitpid
+waitpid-example:
+	gcc waitpid-example.c -o waitpid-example
 
-all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid
+calendar:
+	gcc calendar.c -o calendar
+
+all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar
 
 clean:
-	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid
+	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar
