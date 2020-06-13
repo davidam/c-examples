@@ -7,18 +7,6 @@
 
 // lets take a[5] = {32, 45, 67, 2, 7} as the array to be sorted.
 
-// merge sort function
-void mergeSort(int a[], int p, int r)
-{
-    int q;
-    if(p < r)
-    {
-        q = (p + r) / 2;
-        mergeSort(a, p, q);
-        mergeSort(a, q+1, r);
-        merge(a, p, q, r);
-    }
-}
 
 // function to merge the subarrays
 void merge(int a[], int p, int q, int r)
@@ -55,6 +43,20 @@ void merge(int a[], int p, int q, int r)
         a[i] = b[--k];  // copying back the sorted list to a[]
     } 
 }
+
+// merge sort function
+void mergeSort(int a[], int p, int r)
+{
+    int q;
+    if(p < r)
+    {
+        q = (p + r) / 2;
+        mergeSort(a, p, q);
+        mergeSort(a, q+1, r);
+        merge(a, p, q, r);
+    }
+}
+
 
 // function to print the array
 void printArray(int a[], int size)
