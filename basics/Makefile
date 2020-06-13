@@ -11,7 +11,14 @@ celsius:
 printid: 
 	gcc printid.c -o printid
 
-all: punteros puntero celsius printid
+parentchild:
+	gcc parentchild.c -o parentchild
+
+parentchild2:
+	gcc parentchild2.c -o parentchild2
+
+
+all: punteros puntero celsius printid parentchild parentchild2
 
 clean:
-	rm -f punteros puntero celsius printid
+	rm -f punteros puntero celsius printid parentchild parentchild2	
