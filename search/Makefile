@@ -34,7 +34,7 @@ quicksort:
 # 	gcc jump.c -o jump
 
 mergesort:
-	gcc mergesort.c -o mergesort
+	g++ mergesort.cc -o mergesort
 
 selection-sort:
 	gcc selection-sort.c -o selection-sort
@@ -42,5 +42,5 @@ selection-sort:
 clean: 
 	rm -f bubble-sort bubble countingsort heap quicksort jump merge-sort selection-sort
 
-#all: bubble-sort bubble countingsort heap quicksort mergesort selection-sort 
+all: bubble-sort bubble countingsort heap quicksort mergesort selection-sort 
 	
