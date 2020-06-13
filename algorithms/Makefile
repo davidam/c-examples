@@ -1,9 +1,9 @@
 
 huffman: 
-	gcc huffman.c -o huffman
+	g++ huffman.cc -o huffman
 
 prim: 
-	gcc prim.c -o prim 
+	g++ prim.cc -o prim 
 
 clean:
-	rm -f huffman.c prim.c
+	rm -f huffman prim
