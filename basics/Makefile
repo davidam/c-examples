@@ -41,7 +41,11 @@ stderr-example:
 stderr-example2:
 	gcc stderr-example2.c -o stderr-example2
 
-all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2
+mem:
+	gcc mem.c -o mem
+
+all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 mem
 
 clean:
-	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2
+	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 stringcompare mem
+
