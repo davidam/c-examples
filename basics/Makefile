@@ -59,6 +59,9 @@ gettimeandprint:
 scanf-example:
 	gcc scanf-example.c -o scanf-example
 
+currenttime:
+	gcc currenttime.c -o currenttime
+
 all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 factorial matriz mem atexit-example mygettimeofday currenttime gettimeandprint scanf-example
 
 clean:
