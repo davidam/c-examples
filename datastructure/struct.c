@@ -18,13 +18,12 @@
  
 struct product
 {
-    char name[30]
-    int stock
-    float price, dis
+  char name[30];
+  int stock, price, dis;
 }
  
-void main()
+main()
 {
-     struct product p1 = {"GNU Emacs", 35, 298.56, 2.32}
-     printf("Name=%s,\nStock=%d,\nPrice=$%.2f,\nDiscount=%.2f%.", p1.name, p1.stock, p1.price, p1.dis)
+  struct product p1 = {"GNU Emacs", 35, 298, 2};
+  printf("Name=%s,\nStock=%d,\nPrice=%d,\nDiscount=%d.", p1.name, p1.stock, p1.price, p1.dis);
 }
