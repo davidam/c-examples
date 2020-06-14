@@ -11,7 +11,10 @@ perror:
 cpuexample:
 	gcc cpuexample.c -o cpuexample
 
-all: accept mem perror cpuexample
+signals:
+	gcc signals.c -o signals
+
+all: accept mem perror cpuexample signals
 
 clean:
-	rm -f accept mem perror cpuexample	
+	rm -f accept mem perror cpuexample signals	
