@@ -8,6 +8,9 @@ puntero:
 celsius: 
 	gcc celsius.c -o celsius
 
+factorial:
+	gcc factorial.c -o factorial
+
 printid: 
 	gcc printid.c -o printid
 
@@ -44,8 +47,11 @@ stderr-example2:
 mem:
 	gcc mem.c -o mem
 
-all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 mem
+atexit-example:
+	gcc atexit-example.c -o atexit-example
+
+all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 mem factorial atexit-example
 
 clean:
-	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 stringcompare mem
+	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 stringcompare mem factorial atexit-example
 
