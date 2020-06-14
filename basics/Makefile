@@ -62,7 +62,10 @@ scanf-example:
 currenttime:
 	gcc currenttime.c -o currenttime
 
-all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 factorial matriz mem atexit-example mygettimeofday currenttime gettimeandprint scanf-example
+mygettimeofday:
+	gcc mygettimeofday.c -o mygettimeofday
+
+all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 factorial matriz mem atexit-example mygettimeofday currenttime gettimeandprint scanf-example 
 
 clean:
 	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 stringcompare factorial matriz mem atexit-example mygettimeofday currenttime gettimeandprint scanf-example
