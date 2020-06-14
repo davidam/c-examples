@@ -14,6 +14,12 @@ cpuexample:
 signals:
 	gcc signals.c -o signals
 
+glibcbuffers:
+	gcc glibcbuffers.c -o glibcbuffers
+
+glibcbuffers:
+	gcc glibcbuffers2.c -o glibcbuffers2
+
 all: accept mem perror cpuexample signals
 
 clean:
