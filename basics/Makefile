@@ -26,7 +26,10 @@ waitpid-example:
 calendar:
 	gcc calendar.c -o calendar
 
-all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar
+pi:
+	g++ pi.cc -o pi
+
+all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi
 
 clean:
-	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar
+	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi
