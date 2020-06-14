@@ -50,8 +50,14 @@ mem:
 atexit-example:
 	gcc atexit-example.c -o atexit-example
 
-all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 mem factorial atexit-example
+scanf-example:
+	gcc scanf-example.c -o scanf-example
+
+matriz:
+	gcc matriz.c -o matriz
+
+all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 mem factorial atexit-example scanf-example matriz
 
 clean:
-	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 stringcompare mem factorial atexit-example
+	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2 stringcompare mem factorial atexit-example scanf-example matriz
 
