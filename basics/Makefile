@@ -29,7 +29,19 @@ calendar:
 pi:
 	g++ pi.cc -o pi
 
-all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi
+arguments:
+	gcc arguments.c -o arguments
+
+arguments2:
+	gcc arguments2.c -o arguments2
+
+stderr-example:
+	gcc stderr-example.c -o stderr-example
+
+stderr-example2:
+	gcc stderr-example2.c -o stderr-example2
+
+all: punteros puntero celsius printid parentchild parentchild2 chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2
 
 clean:
-	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi
+	rm -f punteros puntero celsius printid parentchild parentchild2	chain-of-pointers waitpid-example calendar pi arguments arguments2 stderr-example stderr-example2
